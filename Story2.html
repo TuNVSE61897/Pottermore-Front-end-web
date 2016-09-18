@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Story2</title>
+<link rel="stylesheet" type="text/css" href="Story.css"/>
+<script type="text/javascript" src="Story.js"></script>
+<style>
+.bgshow {
+	opacity: 1.0;
+  	transform:translate3d(0,0,0);
+	transition: transform 400ms ease, opacity 400ms ease;
+	transition-duration:2s;
+}
+
+.bghide {
+	opacity: 0.0;
+  	transform:translate3d(0,0,0);
+	transition: transform 400ms ease, opacity 400ms ease;
+	transition-duration:2s;
+}
+.bg1 {
+  opacity: 1.0;
+  transform:translate3d(0,0,0);
+  transition: background-image ease-in-out;
+  transition-duration:1s;
+  background-image:url("Photos/Story/2.png");
+  z-index:bottom;
+}
+
+.bg2 {
+	opacity: 0.0;
+  	transform:translate3d(0,0,0);
+  	transition: background-image ease-in-out;
+  	transition-duration:1.5s;
+  	background-image:url("Photos/Story/2b.png");
+	z-index:bottom;
+}
+.bg3 {
+	opacity: 0.0;
+  	transform:translate3d(0,0,0);
+  	transition: background-image ease-in-out;
+  	transition-duration:1.5s;
+  	background-image:url("Photos/Story/2c.png");
+	z-index:bottom;
+}
+
+#apDiv1 {
+	position: absolute;
+	left: 833px;
+	top: 233px;
+	width: 31px;
+	height: 27px;
+	z-index: 1;
+}
+
+#apDiv3 {
+	position: absolute;
+	left: 513px;
+	top: 148px;
+	width: 18px;
+	height: 32px;
+	z-index: 8;
+}
+#apDiv2 {
+	position: absolute;
+	left: 822px;
+	top: 242px;
+	width: 77px;
+	height: 64px;
+	z-index: 11;
+}
+</style>
+<script>
+	function changebg()
+	{
+		var bg=document.getElementById('body');
+		bg.className="bg2";
+		var audio=document.getElementById('audio');
+		audio.play();
+	}
+
+	function changebg2()
+	{
+		var bg=document.getElementById('body');
+		bg.className="bg3";
+		var audio=document.getElementById('audio2');
+		audio.play();
+	}
+</script>
+</head>
+
+<body id="body" class="bg1" style="background-size:98%">
+<div id="apDiv1"><a href="#" onmouseover="changebg()" onclick="changebg2(); format(1,'linkinfo')">
+	<img src="Photos/Story/no.png" width="28" height="29" />
+</a></div>
+
+
+<div id="table">
+  <table width="300px" class="summary">
+    <tr>
+      <td height="21" align="center"><font size="+1">Something Peculiar is Happening</font></td>
+    </tr>
+    <tr>
+      <td height="46" align="center"><img src="Photos/Story/flourish.png" alt=""/></td>
+    </tr>
+    <tr>
+      <td width="186" height="32" class="font">A man appeared on the corner the cat had been watching, appeared so suddenly and silently you’d have thought he’d just popped out of the ground. The cat’s tail twitched and its eyes narrowed...</td>
+    </tr>
+    <tr>
+      <td height="10px"></td>
+    </tr>
+  </table>
+</div>
+<div id="apDiv3"><a href="#" onclick="format(0,'table'),format(0,'quit');sound('audio3')"><img src="Photos/Story/moment-overlay-bookmark.png" alt="" 
+width="16" height="32" id="quit" /></a></div>
+
+
+<div id="linkinfo" class="hide"><a href="#" style="text-decoration:none" onclick="sound('audio3')">
+<p class="fontinfo">Put-Outer</p></a></div>
+
+
+
+<audio src="Audio/Put-Outer.mp3" id="audio">
+<audio src="Audio/Turnoff.mp3" id="audio2">
+<audio src="Audio/Quit.mp3" id="audio3">
+
+
+</body>
+</html>

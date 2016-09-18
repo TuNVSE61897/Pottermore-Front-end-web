@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="Register.css"/>
+<style type="text/css">
+
+</style>
+<script type="text/javascript" src="RegisterForm.js"></script>
+<script type="text/javascript" src="Checkform.js"></script>
+
+</head>
+
+<body id="body" onload="year(); day();" background="Photos/Untitled-5 copy.jpg" style="background-size:100%; width:100%; height:100%">
+
+<form id="f" onsubmit="return format(6)">
+  <div id="apDiv1"><img id="step1" class="step1b" src="Photos/reg1b.png" width="352" height="455" /></div>
+
+<div id="apDiv2" class="formb">  <select required="required" id="day" class="font" name="select" style="height:26px; width:50px"></select>
+
+
+<select required="required" id="month" class="font" style="height:26px; width:106px; text-align:center">
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+
+<select id="year" class="font" style="height:26px; width:67px"></select>
+</div>
+
+<div id="apDiv5" class="formb"><a onclick="format(1)"><img src="Photos/continue.jpg" alt="" /></a></div>
+
+<div id="apDiv3" ><img id="step2" class="step2a" src="Photos/reg2a.png" alt="" width="350" height="472" /></div>
+
+<div id="apDiv4" class="forma">
+  <select required="required" name="country" class="font" id="country" style="height:26px; width:225px; text-align:center">
+    <option>China</option>
+    <option>France</option>
+    <option>Germany</option>
+    <option>Italy</option>
+    <option>Japan</option>
+    <option>Malaysia</option>
+    <option>South Korea</option>
+    <option>United Kingdom</option>
+    <option>United State</option>
+    <option>Vietnam</option>
+    <option>Thailand</option>
+  </select>
+</div>
+
+<div id="apDiv6" class="forma"><a onclick="format(2)"><img src="Photos/continue.jpg" alt="" /></a></div>
+
+<div id="apDiv7"><img id="step3" class="step3a" src="Photos/reg3a.png" width="230" height="500" /></div>
+
+<div id="apDiv8" class="forma">
+	<table>
+    	<tr><td height="52">
+        	<input placeholder="Must be alphabetic characters only" required="required" type="text" class="font" 
+            id="firstname" style="height:22px; width:219px; text-align:center" />
+        </td></tr>
+        <tr><td style="height:25px"></td></tr>
+        <tr><td>
+        	<input placeholder="Must be alphabetic characters only" required="required" type="text" class="font" 
+            id="lastname" style="height:22px; width:219px; text-align:center" />
+        </td></tr>
+        <tr><td style="height:36px"></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input required="required" type="radio" value="male" name="gender" checked="checked"/>		   	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="female" name="gender" /></td></tr>
+        <tr><td style="height:19px"></td></tr>
+        <tr><td height="68">
+        	<input placeholder="Your Email must be valid" required="required" type="text" class="font" 
+            id="email" style="height:22px; width:219px; text-align:center" />
+        </td></tr>
+        <tr><td style="height:17px"></td></tr>
+        <tr><td>
+        	<input placeholder="Please confirm your Email" required="required" type="text" class="font" 
+            id="email2" style="height:22px; width:219px; text-align:center" />
+        </td></tr>
+    </table>
+</div>
+
+<div id="apDiv9" class="forma"><a onclick="checkformname()"><img src="Photos/continue.jpg" alt="" /></a></div>
+
+
+<div id="apDiv10"><img id="step4" class="step4a" src="Photos/reg4a.png" width="230" height="500" /></div>
+
+<div id="apDiv11" class="forma">
+  <table>
+    <tr>
+      <td height="52">
+      	<input placeholder="Must have 7-12 characters" required="required" type="text" class="font" 
+        id="password" style="height:22px; width:219px; text-align:center" />
+      </td></tr>
+    <tr>
+      <td style="height:20px"></td>
+    </tr>
+    <tr>
+      <td>
+      	<input placeholder="Please confirm your Password" required="required" type="text" class="font" 
+        id="password2" style="height:22px; width:219px; text-align:center" />
+      </td></tr>
+  </table>
+</div>
+
+<div id="apDiv12" class="forma"><a onclick="checkformpass()"><img src="Photos/continue.jpg" alt="" /></a></div>
+
+<div id="apDiv13"><img class="step5a" id="step5" src="Photos/reg5a.png" alt="" width="230" height="400" /></div>
+
+<div id="apDiv14" class="forma">
+	<input placeholder="Must have 5-12 characters" required="required" type="text" class="font" 
+    id="username" style="height:22px; width:219px; text-align:center" />
+</div>
+
+<div id="apDiv15" class="forma"><a onclick="checkformid()"><img src="Photos/continue.jpg" alt="" /></a></div>
+
+<div id="apDiv16"><table style="width:220px"><tr><td align="center" ><p id="id" class="font2" align="center"></p></td></tr></table></div>
+
+<div id="apDiv17" class="forma">
+  <input type="checkbox" id="agree" required="required" />
+</div>
+
+<div id="apDiv18" class="forma">
+<input type="submit" value="" style="background:url(Photos/create.png) no-repeat; width:127px; height:22px; border:none" />
+</div>
+
+</form>
+
+<div id="apDiv19">
+  <table style="width:250px">
+    <tr>
+      <td align="center" ><p id="name" class="font2" align="center"></p></td>
+    </tr>
+  </table>
+</div>
+
+<div id="apDiv20">
+  <table style="width:220px">
+    <tr>
+      <td align="center" ><p id="mail" class="font2" align="center"></p></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

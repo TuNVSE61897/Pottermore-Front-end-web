@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>story1</title>
+<link rel="stylesheet" type="text/css" href="Slider.css"/>
+<link rel="stylesheet" type="text/css" href="Story.css"/>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 110px;
+	top: 50px;
+	width: 517px;
+	height: 454px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	left: 110px;
+	top: 50px;
+	width: 517px;
+	height: 454px;
+	z-index: 3;
+}
+
+#apDiv4 {
+	position: absolute;
+	left: 525px;
+	top: 148px;
+	width: 15px;
+	height: 32px;
+	z-index: 8;
+}
+
+#apDiv6 {
+	position: absolute;
+	left: 415px;
+	top: 1px;
+	width: 137px;
+	height: 95px;
+	z-index: 7;
+}
+#apDiv7 {
+	position: absolute;
+	left: 460px;
+	top: 65px;
+	width: 68px;
+	height: 23px;
+	z-index: 7;
+}
+
+</style>
+<script type="text/javascript" src="Slider.js"></script>
+<script type="text/javascript" src="Story.js"></script>
+</head>
+
+<body id="body" background="Photos/Story/1.png" bgcolor="#000000" style="background-size:98%; background-repeat:no-repeat">
+
+<div id="table" class="show">
+  <table width="300px" class="summary">
+  	<tr><td height="21" align="center"><font size="+1">Number Four, Privet Drive</font></td></tr>
+    <tr><td height="46" align="center"><img src="Photos/Story/flourish.png" /></td></tr>
+    <tr>
+      <td width="186" height="32" class="font">When Mr and Mrs Dursley woke up on the dull, grey Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country...</td>
+    </tr>
+    <tr><td height="10px"></td></tr>
+  </table>
+</div>
+<div id="apDiv4"><a href="#" onclick="format(0,'table'),format(0,'quit'); sound('audio')">
+<img id="quit" src="Photos/Story/moment-overlay-bookmark.png" width="16" height="32" />
+</a></div>
+
+<div id="apDiv2" ><img onclick="format(1,'info'); format(1,'back'); format(1,'linkinfo'); changesize(550,1400,'info'); sound('audio2')" onmouseover="format(1,'board')" onmouseout="format(0,'board')"  class="hide" id="board2" src="Photos/Story/1a0.png" 
+alt="" width="542" height="461" /></div>
+
+<div id="apDiv1" ><img class="hide" id="board" src="Photos/Story/1a.png" alt="" width="550" height="469" /></div>
+
+<div id="apDiv6"><img class="hide" id="info" src="Photos/Story/info.png" width="644" height="720" /></div>
+
+
+<div id="apDiv7"><a href="#">
+<img onclick="format(0,'info');format(0,'back');changesize(550,469,'info')" 
+class="hide" id="back" src="Photos/Story/back.png" width="66" height="22" />
+</a></div>
+
+<div id="linkinfo" class="hide"><a href="#" style="text-decoration:none" onclick="format(1,'info'); format(1,'back');changesize(550,1400,'info');sound('audio2')">
+<p class="fontinfo">Number Four, <br /> Privet Drive</p></a></div>
+
+<audio src="Audio/Quit.mp3" id="audio">
+<audio src="Audio/Info.mp3" id="audio2">
+</body>
+</html>

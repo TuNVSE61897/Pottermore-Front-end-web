@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+#apDiv1 {
+	position: absolute;
+	left: 251px;
+	top: 119px;
+	width: 298px;
+	height: 409px;
+	z-index: 1;
+}
+.whatisptm {
+	background-color: #FFF;
+	font-size: 20px;
+	box-shadow: #000 3px 3px;
+	background-image: url(Photos/box.png);
+	background-size: cover;
+	vertical-align: text-top;
+}
+td.whatisPTMfont {
+	font-weight: bolder;
+	font-size: x-large;
+	font-variant: normal;
+}
+font.fontto {
+	font-size: 24px;
+}
+#apDiv2 {
+	position: absolute;
+	left: 609px;
+	top: 157px;
+	width: 284px;
+	height: 492px;
+	z-index: 2;
+}
+#apDiv3 {
+	position: absolute;
+	left: 631px;
+	top: 397px;
+	width: 169px;
+	height: 104px;
+	z-index: 3;
+}
+#apDiv4 {
+	position: absolute;
+	left: 932px;
+	top: 199px;
+	width: 284px;
+	height: 492px;
+	z-index: 2;
+}
+#apDiv5 {
+	position: absolute;
+	left: 981px;
+	top: 433px;
+	width: 162px;
+	height: 91px;
+	z-index: 4;
+}
+#apDiv6 {
+	position: absolute;
+	left: 895px;
+	top: 8px;
+	width: 101px;
+	height: 49px;
+	z-index: 5;
+}
+
+#apDiv8 {
+	position: absolute;
+	left: 620px;
+	top: 5px;
+	width: 147px;
+	height: 101px;
+	z-index: 7;
+}
+#apDiv9 {
+	position: absolute;
+	left: 480px;
+	top: 13px;
+	width: 104px;
+	height: 66px;
+	z-index: 8;
+}
+#apDiv10 {
+	position: absolute;
+	left: 328px;
+	top: 13px;
+	width: 107px;
+	height: 64px;
+	z-index: 9;
+}
+
+#apDiv7 {
+	position: absolute;
+	left: 3px;
+	top: 75px;
+	width: 100%;
+	height: 707px;
+	visibility: visible;
+	z-index:6;
+}
+
+#apDiv11 {
+	position: absolute;
+	left: 44px;
+	top: 153px;
+	width: 134px;
+	height: 112px;
+	z-index: 10;
+}
+#apDiv12 {
+	position: absolute;
+	left: 2px;
+	top: 74px;
+	width: 140px;
+	height: 76px;
+	z-index: 10;
+}
+
+#apDiv13 {
+	position: absolute;
+	left: 196px;
+	top: 7px;
+	width: 86px;
+	height: 39px;
+	z-index: 11;
+}
+#apDiv14 {
+	position: absolute;
+	left: 1026px;
+	top: 9px;
+	width: 124px;
+	height: 67px;
+	z-index: 12;
+}
+
+#apDiv15 {
+	position: absolute;
+	left: 981px;
+	top: 76px;
+	width: 160px;
+	height: 42px;
+	z-index: 13;
+}
+
+#apDiv16 {
+	position: absolute;
+	left: 10px;
+	top: 76px;
+	width: 1181px;
+	height: 526px;
+	z-index: 6;
+	visibility: visible;
+}
+
+.signin {
+	background-color: #000;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	border-style:solid;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	padding:10px;
+}
+
+#read {
+	position: absolute;
+	left: 1300px;
+	top: 105px;
+	width: 134px;
+	height: 49px;
+	z-index: 9;
+}
+
+
+.font {
+	font-family: "Lucida Handwriting";
+	font-size: 12px;
+	color: #FAC434;
+	font-weight: lighter;
+}
+
+.show {
+	opacity: 1.0;
+  	transform:translate3d(0,0,0);
+	transition: transform 400ms ease, opacity 400ms ease;
+	transition-duration:0.5s;
+}
+
+.hide {
+	opacity: 0.0;
+  	transform:translate3d(0,0,0);
+	transition: transform 400ms ease, opacity 400ms ease;
+	transition-duration:0.5s;
+}
+
+.show2{visibility:visible}
+.hide2{visibility:hidden}

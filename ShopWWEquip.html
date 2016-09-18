@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShopWWEquip</title>
+<link rel="stylesheet" type="text/css" href="Story.css"/>
+
+<style type="text/css">
+#div1 {
+	position: absolute;
+	left: 426px;
+	top: 75px;
+	width: 92px;
+	height: 79px;
+	z-index: 1;
+}
+#div2 {
+	position: absolute;
+	left: 416px;
+	top: 163px;
+	width: 182px;
+	height: 50px;
+	z-index: 2;
+}
+#div3 {
+	position: absolute;
+	left: 63px;
+	top: 132px;
+	width: 109px;
+	height: 44px;
+	z-index: 3;
+}
+#div4 {
+	position: absolute;
+	left: 242px;
+	top: 104px;
+	width: 58px;
+	height: 88px;
+	z-index: 4;
+}
+#div5 {
+	position: absolute;
+	left: 57px;
+	top: 350px;
+	width: 120px;
+	height: 186px;
+	z-index: 5;
+}
+#div6 {
+	position: absolute;
+	left: 211px;
+	top: 332px;
+	width: 192px;
+	height: 132px;
+	z-index: 6;
+}
+#div7 {
+	position: absolute;
+	left: 665px;
+	top: 132px;
+	width: 121px;
+	height: 94px;
+	z-index: 7;
+}
+#div8 {
+	position: absolute;
+	left: 671px;
+	top: 341px;
+	width: 78px;
+	height: 92px;
+	z-index: 8;
+}
+#div9 {
+	position: absolute;
+	left: 831px;
+	top: 361px;
+	width: 159px;
+	height: 59px;
+	z-index: 9;
+}
+.formb{visibility:visible;}
+
+.forma{visibility:hidden;}
+</style>
+<script>
+	function product(name, avatar, price)
+	{
+		this.id=id;
+		this.name=name;
+		this.avatar=avatar;
+		this.price=price;
+	}
+	function create(id, name, avatar, price)
+	{
+		document.getElementById('bodyshop').style.backgroundImage = "url(Photos/Free/buy.png)";
+		for (var i=1;i<=9;i++)
+		{
+			document.getElementById(i).className=forma;
+		}
+		var p1=new product(id,name,avatar,price);
+		document.getElementById("name").innerHTML=name;
+		var s='<table border="1">';
+		s=s+"<caption>Sản phẩm đã đặt mua</caption>";
+		s=s+"<tr>";
+		s= s+"<td>"+ p1.id+"</td>";
+		s= s+"<td>"+ p1.name+"</td>";
+		s= s+"<td>"+ p1.avatar+"</td>";
+		s= s+"<td>"+ p1.price+"</td>";
+		s=s+"<td><input type='text' value='1'</td>";
+		s= s+"<td>"+ (p1.price*this.value)+"</td>";
+		s=s+"</tr>";
+		s=s+"</table>";
+		document.write(s);
+	}
+</script>
+</head>
+
+<body id="bodyshop" background="Photos/Free/Shopbg.png" style="width:1000px; height:600px; background-repeat:no-repeat">
+<div id="first"><div id="div1"><font size="+3"><strong>Wiseacre's</strong></font>
+</div>
+<div id="div2"> <font size="+1"><strong>Wizarding Equipment</strong></font> </div>
+  
+<div id="div3">
+  <table align="center">
+    <tr>
+	<td><img src="Photos/Free/brass-scales.png" alt="" width="96" height="120" /></td>    </tr>
+    <tr><td height="16"></td></tr>
+    <tr>
+      <td align="center" class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Brass Scales</a></td>
+    </tr>
+  </table>
+</div>
+
+  <div id="div4">
+    <table align="center">
+      <tr>
+        <td><img src="Photos/Free/brass-telescope.png" alt="" width="96" height="120" /></td>
+      </tr>
+      <tr>
+        <td height="15"></td>
+      </tr>
+      <tr>
+        <td align="center" class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Brass Telescope</a></td></td>
+      </tr>
+    </table>
+  </div>
+  
+      <div id="div5">
+        <table align="center">
+          <tr>
+            <td><img src="Photos/Free/crystal-phials.png" alt="" width="96" height="120" /></td>
+          </tr>
+          <tr>
+            <td height="14"></td>
+          </tr>
+          <tr>
+            <td align="center" class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Crystal Phials</a></td>
+            <td></td></td>
+          </tr>
+        </table>
+      </div>
+      
+<div id="div6">
+  <table align="center">
+             <tr>
+               <td><img src="Photos/Free/moon-charts.png" alt="" width="96" height="120" /></td>
+             </tr>
+             <tr>
+               <td height="20"></td>
+             </tr>
+             <tr>
+               <td class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Moon Charts</a></td>
+               <td></td>
+               <td></td></td>
+             </tr>
+           </table>
+</div>
+           <div id="div7">
+             <table align="center">
+               <tr>
+                 <td><img src="Photos/Free/silver-scales.png" alt="" width="96" height="120" /></td>
+               </tr>
+               <tr>
+                 <td height="12"></td>
+               </tr>
+               <tr>
+                 <td align="center" class="fontinfo">
+                 <a href="Buy.html" style="text-decoration:none; color:#FAC434">
+                 	Silver Scales
+                 </a></td>
+                 <td></td>
+                 <td></td>
+                 <td></td></td>
+               </tr>
+             </table>
+           </div>
+              <div id="div8">
+                <table align="center">
+                  <tr>
+                    <td height="123"><img src="Photos/Free/star-charts.png" alt="" width="96" height="120" /></td>
+                  </tr>
+                  <tr>
+                    <td height="12"></td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Star Charts</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></td>
+                  </tr>
+                </table>
+              </div>
+                  <div id="div9">
+                    <table align="center">
+                      <tr>
+                        <td height="123"><img src="Photos/Free/globe-of-the-moon.png" alt="" width="96" height="120" /></td>
+                      </tr>
+                      <tr>
+                        <td height="2"></td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="fontinfo"><a href="#" style="text-decoration:none; color:#FAC434">Globe of the Moon</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td></td>
+                      </tr>
+                    </table>
+                  </div>
+</div>
+</body>
+</html>

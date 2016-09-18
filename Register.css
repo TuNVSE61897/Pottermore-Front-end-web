@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+
+#apDiv1 {
+	position: absolute;
+	left: 177px;
+	top: -44px;
+	width: 205px;
+	height: 185px;
+}
+
+#apDiv2 {
+	position: absolute;
+	left: 225px;
+	top: 245px;
+	width: 277px;
+	height: 71px;
+	z-index: 6;
+}
+
+#apDiv5 {
+	position: absolute;
+	left: 314px;
+	top: 285px;
+	width: 76px;
+	height: 22px;
+	z-index: 6;
+}
+
+#apDiv3 {
+	position: absolute;
+	left: 481px;
+	top: 2px;
+	width: 277px;
+	height: 71px;
+}
+
+.step1a {
+	position: relative;
+	width: 218px;
+	height: 350px;
+	z-index: 5;
+	transition-duration:0.5s;
+}
+
+.step1b {
+	position: relative;
+	width: 352px;
+	height: 514px;
+	z-index: 6;
+}
+
+.step1c {
+	position: relative;
+	top:50px;
+	width: 218px;
+	height: 350px;
+	z-index: 1;
+}
+
+.step2a {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	z-index: 4;
+}
+
+.step2b {
+	position: relative;
+	top: -30px;
+	left: -130px;
+	width: 350px;
+	height: 506px;
+	z-index: 6;	
+}
+
+.step2c {
+	position: relative;
+	left:-120px;
+	width: 200px;
+	height: 300px;
+	z-index: 2;
+}
+
+#apDiv4 {
+	position: absolute;
+	left: 414px;
+	top: 254px;
+	width: 183px;
+	height: 102px;
+	z-index: 6;
+}
+
+
+#apDiv6 {
+	position: absolute;
+	left: 487px;
+	top: 295px;
+	width: 78px;
+	height: 19px;
+	z-index: 6;
+}
+
+#apDiv7 {
+	position: absolute;
+	left: 645px;
+	top: 1px;
+	width: 222px;
+	height: 101px;
+	z-index: 3;
+}
+
+.step3a {
+	position: relative;
+	width: 230px;
+	height: 500px;
+	z-index: 3;
+}
+
+.step3b {
+	position: relative;
+	left:-120px;
+	width: 350px;
+	height: 707px;
+	z-index: 6;
+}
+
+.step3c {
+	position: relative;
+	left:-115px;
+	width: 230px;
+	height: 500px;
+	z-index: 3;
+}
+
+#apDiv8 {
+	position: absolute;
+	left: 586px;
+	top: 168px;
+	width: 111px;
+	height: 26px;
+	z-index: 3;
+}
+
+#apDiv9 {
+	position: absolute;
+	left: 661px;
+	top: 526px;
+	width: 78px;
+	height: 22px;
+	z-index: 6;
+}
+
+#apDiv10 {
+	position: absolute;
+	left: 833px;
+	top: 0px;
+	width: 130px;
+	height: 72px;
+}
+
+.step4a {
+	position: relative;
+	width: 230px;
+	height: 450px;
+	z-index: 2;
+}
+
+.step4b {
+	position: relative;
+	left:-120px;
+	width: 350px;
+	height: 528px;
+	z-index: 6;
+}
+
+.step4c {
+	position: relative;
+	left:-115px;
+	width: 230px;
+	height: 450px;
+	z-index: 4;
+}
+
+#apDiv11 {
+	position: absolute;
+	left: 773px;
+	top: 218px;
+	width: 141px;
+	height: 57px;
+	z-index: 6;
+}
+
+#apDiv12 {
+	position: absolute;
+	left: 849px;
+	top: 343px;
+	width: 78px;
+	height: 21px;
+	z-index: 6;
+}
+
+#apDiv13 {
+	position: absolute;
+	left: 1030px;
+	top: 2px;
+	width: 273px;
+	height: 120px;
+}
+
+.step5a {
+	position: relative;
+	width: 230px;
+	height: 400px;
+	z-index: 1;
+}
+
+.step5b {
+	position: relative;
+	left:-120px;
+	width: 350px;
+	height: 447px;
+	z-index: 6;}
+
+#apDiv14 {
+	position: absolute;
+	left: 973px;
+	top: 222px;
+	width: 144px;
+	height: 22px;
+	z-index: 6;
+}
+
+#apDiv15 {
+	position: absolute;
+	left: 1046px;
+	top: 269px;
+	width: 83px;
+	height: 18px;
+	z-index: 6;
+}
+
+#apDiv16 {
+	position: absolute;
+	left: 382px;
+	top: 248px;
+	width: 220px;
+	height: 16px;
+	z-index: 5;
+}
+
+#apDiv17 {
+	position: absolute;
+	left: 685px;
+	top: 413px;
+	width: 21px;
+	height: 19px;
+	z-index: 6;
+}
+
+#apDiv18 {
+	position: absolute;
+	left: 883px;
+	top: 562px;
+	width: 56px;
+	height: 29px;
+	z-index: 6;
+}
+
+#apDiv17b {
+	position: absolute;
+	left: 780px;
+	top: 455px;
+	width: 21px;
+	height: 19px;
+	z-index: 10;
+}
+
+#apDiv18b {
+	position: absolute;
+	left: 873px;
+	top: 547px;
+	width: 56px;
+	height: 29px;
+	z-index: 11;
+}
+
+#apDiv19 {
+	position: absolute;
+	left: 370px;
+	top: 242px;
+	width: 86px;
+	height: 16px;
+	z-index: 5;
+}
+
+#apDiv20 {
+	position: absolute;
+	left: 362px;
+	top: 420px;
+	width: 105px;
+	height: 34px;
+	z-index: 6;
+}
+
+.font {
+	font-family: "Lucida Handwriting";
+	color: #333;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.font2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px;
+	text-decoration: blink;
+	font-weight: bold;
+}
+
+.formb{visibility:visible;}
+
+.forma{visibility:hidden;}

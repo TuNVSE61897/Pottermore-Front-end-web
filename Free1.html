@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Free1</title>
+<link rel="stylesheet" type="text/css" href="Story.css"/>
+<script type="text/javascript" src="Story.js"></script>
+<style type="text/css">
+#apDiv1b {
+	position: absolute;
+	left: 433px;
+	top: 69px;
+	width: 131px;
+	height: 118px;
+	z-index: 1;
+}
+#apDiv1 {
+	position: absolute;
+	left: 433px;
+	top: 69px;
+	width: 131px;
+	height: 118px;
+	z-index: 2;
+}
+#apDiv2 {
+	position: absolute;
+	left: 509px;
+	top: 315px;
+	width: 88px;
+	height: 44px;
+	z-index: 3;
+}
+#apDiv3 {
+	position: absolute;
+	left: 198px;
+	top: 2px;
+	width: 74px;
+	height: 81px;
+	z-index: 1;
+}
+.zindexhigh { z-index:50;}
+.zindexlow  {z-index:0;}
+<script>
+	function zindexlow(id)
+	{
+		var div = document.getElementById(id);
+		div.className="zindexlow";
+	}
+	function zindexhigh(id)
+	{
+		var div = document.getElementById(id);
+		div.className="zindexhigh";
+	}
+</script>
+</style>
+</head>
+
+<body background="Photos/Free/1.png" style="background-size:100%; background-repeat:no-repeat">
+
+<div id="apDiv3">
+  <iframe name="if2" width="1000px" height="600px" scrolling="no" id="if2" frameborder="0"></iframe>
+</div>
+
+<div id="apDiv1"><a href="ShopWWEquip.html" onclick=" sound('audio'); format(0,'equip2'); zindexlow('apDiv1b'); zindexhigh('apDiv3');"
+onmouseover="format(1,'equip2'); format(1,'shop1')" onmouseout="format(0,'equip2');format(0,'shop1')" target="if2">
+<img id="equip" class="hide" src="Photos/Free/WWEquipb.png" alt="" width="150" height="480" /></a></div>
+<div id="apDiv1b"><img class="hide" id="equip2" src="Photos/Free/WWEquip.png" alt="" width="150" height="480" /></div>
+<div id="apDiv2"><img id="shop1" class="hide" src="Photos/Free/shop1.png" width="194" height="104" /></div>
+
+<audio src="Audio/Bell.mp3" id="audio">
+</body>
+</html>
